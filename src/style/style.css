@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500&display=swap");
 @font-face {
   font-family: "Raleway";
   src: url("/src/fonts/Raleway/Raleway-VariableFont_wght.ttf");
@@ -23,13 +24,18 @@ a, a:focus, a:active {
   text-decoration: none;
 }
 
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
 .section_services .container .services_content .services_item, .header .navigation .menu_header .header_list, .header .navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.section_stories .container .stories_content .stories_item .item_data, .section_team .team_content .team_item .team_prof, .section_team .team_content .team_item .team_name, .section_futures .container .box_futures .text_futures, .section_futures .container .box_futures .number_futures, .section_about .content_about .box_about .hov_box, .section_welcome .slider .box_slider .number_box, .section_welcome .btn_welcome, .section_welcome .main_title, .section_welcome .title_welcome, .header .navigation {
+.section_stories .container .stories_content .stories_item .item_data, .section_team .team_content .team_item .team_prof, .section_team .team_content .team_item .team_name, .section_futures .container .box_futures, .section_about .content_about .pic_about .hov_box, .section_welcome .slider .box_slider .number_box, .section_welcome .btn_welcome, .section_welcome .main_title, .section_welcome .title_welcome, .header .navigation {
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -57,7 +63,7 @@ a, a:focus, a:active {
   }
 }
 
-.section_location .location_content .location_text, .section_stories .container .stories_subtitle, .section_clients .container .clients_subtitle, .section_work .work_subtitle, .section_team .team_subtitle, .section_what .what_subtitle, .section_devices .container .devices_subtitle, .section_services .container .services_subtitle, .section_about .subtitle_about {
+.section_location .container .location_content .location_text, .section_stories .container .stories_subtitle, .section_clients .container .clients_subtitle, .section_work .work_subtitle, .section_team .team_subtitle, .section_what .what_subtitle, .section_devices .container .devices_subtitle, .section_services .container .services_subtitle, .section_about .subtitle_about {
   padding: 18px 0;
   margin-bottom: 24px;
   font-family: "Raleway";
@@ -70,13 +76,13 @@ a, a:focus, a:active {
   color: #2D3033;
 }
 @media screen and (max-width: 1024px) {
-  .section_location .location_content .location_text, .section_stories .container .stories_subtitle, .section_clients .container .clients_subtitle, .section_work .work_subtitle, .section_team .team_subtitle, .section_what .what_subtitle, .section_devices .container .devices_subtitle, .section_services .container .services_subtitle, .section_about .subtitle_about {
+  .section_location .container .location_content .location_text, .section_stories .container .stories_subtitle, .section_clients .container .clients_subtitle, .section_work .work_subtitle, .section_team .team_subtitle, .section_what .what_subtitle, .section_devices .container .devices_subtitle, .section_services .container .services_subtitle, .section_about .subtitle_about {
     font-size: 24px;
     line-height: 28px;
   }
 }
 @media screen and (max-width: 320px) {
-  .section_location .location_content .location_text, .section_stories .container .stories_subtitle, .section_clients .container .clients_subtitle, .section_work .work_subtitle, .section_team .team_subtitle, .section_what .what_subtitle, .section_devices .container .devices_subtitle, .section_services .container .services_subtitle, .section_about .subtitle_about {
+  .section_location .container .location_content .location_text, .section_stories .container .stories_subtitle, .section_clients .container .clients_subtitle, .section_work .work_subtitle, .section_team .team_subtitle, .section_what .what_subtitle, .section_devices .container .devices_subtitle, .section_services .container .services_subtitle, .section_about .subtitle_about {
     margin-bottom: 19px;
   }
 }
@@ -98,28 +104,44 @@ a, a:focus, a:active {
   }
 }
 
-.section_location .location_content .line, .section_stories .container .line, .section_clients .container .line, .section_work .line, .section_team .line, .section_what .line, .section_devices .container .line, .section_services .container .line, .section_about .red_line, .section_welcome .line {
+.section_location .container .location_content .line, .section_stories .container .line, .section_clients .container .line, .section_work .line, .section_team .line, .section_what .line, .section_devices .container .line, .section_services .container .line, .section_about .red_line, .section_welcome .line {
   width: 170px;
   margin: 0 auto;
 }
 @media only screen and (max-width: 320px) {
-  .section_location .location_content .line, .section_stories .container .line, .section_clients .container .line, .section_work .line, .section_team .line, .section_what .line, .section_devices .container .line, .section_services .container .line, .section_about .red_line, .section_welcome .line {
+  .section_location .container .location_content .line, .section_stories .container .line, .section_clients .container .line, .section_work .line, .section_team .line, .section_what .line, .section_devices .container .line, .section_services .container .line, .section_about .red_line, .section_welcome .line {
     width: 134px;
   }
 }
 
-.section_comment2 .container .arrow2, .section_comment2 .container .arrow1, .section_comment .container .arrow2, .section_comment .container .arrow1 {
-  margin-top: 80px;
-  width: 37px;
-  height: 20px;
-  border-top: 2px solid #C6CBCD;
-  border-right: 2px solid #C6CBCD;
-  margin-right: 60px;
+.section_welcome .slider .box_slider .number_box {
+  font-family: Raleway;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 0em;
+  text-align: left;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
 }
-@media only screen and (max-width: 320px) {
-  .section_comment2 .container .arrow2, .section_comment2 .container .arrow1, .section_comment .container .arrow2, .section_comment .container .arrow1 {
-    display: none;
-  }
+
+.section_futures .container .box_futures {
+  font-family: Raleway;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 75px;
+  letter-spacing: 0em;
+  text-align: center;
 }
 
 .footer .footer_box .third_block .thirdBlog_title, .footer .footer_box .second_block .secBlock_title {
@@ -149,6 +171,12 @@ a, a:focus, a:active {
 @media only screen and (max-width: 1024px) {
   .container {
     padding: 0 16px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  #arrow {
+    display: none;
   }
 }
 
@@ -186,7 +214,7 @@ a, a:focus, a:active {
     left: 10px;
   }
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 540px) {
   .header .navigation .menu_header {
     width: 100%;
     position: absolute;
@@ -195,7 +223,7 @@ a, a:focus, a:active {
     transition: all 0.8s;
   }
   .header .navigation .menu_header.open {
-    z-index: 5;
+    z-index: 4;
     top: 55px;
   }
 }
@@ -207,9 +235,12 @@ a, a:focus, a:active {
     min-width: 550px;
   }
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 540) {
   .header .navigation .menu_header .header_list {
-    background: linear-gradient(rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%), url(/src/img/Rectangle\ 2.png);
+    background-image: url(/src/img/Rectangle\ 2.png);
+    background-size: cover;
+    background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
+    background-blend-mode: overlay;
     display: block;
     min-width: 318px;
     height: 100vw;
@@ -227,7 +258,7 @@ a, a:focus, a:active {
   color: #F38281;
   border-bottom: 1px solid #F38281;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 540) {
   .header .navigation .menu_header .header_list li {
     min-height: 45px;
   }
@@ -248,7 +279,7 @@ a, a:focus, a:active {
 .header .navigation .header_burger span:nth-child(3) {
   transform: translateY(12px);
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 540px) {
   .header .navigation .header_burger {
     display: block;
     position: absolute;
@@ -352,14 +383,10 @@ a, a:focus, a:active {
 }
 .section_welcome .slider .box_slider .number_box {
   padding: 10px 0;
-  font-family: "Open Sans";
-  text-align: start;
-  font-size: 24px;
-  font-weight: 100;
+  font-size: 18px;
 }
 .section_welcome .slider .box_slider .number_box span {
   font-size: 36px;
-  font-weight: 700;
 }
 @media screen and (max-width: 320px) {
   .section_welcome .slider .box_slider .number_box {
@@ -406,94 +433,60 @@ a, a:focus, a:active {
     margin-top: 16px;
   }
 }
-.section_about .content_about .box_about {
+.section_about .content_about .pic_about {
+  transition: all 0.5s ease-in-out;
   position: relative;
-  transition: all 3s ease-in-out;
 }
-.section_about .content_about .box_about .box_origin {
-  background-color: #95E1D3;
+.section_about .content_about .pic_about .hov_box {
+  width: 100%;
+  height: 100%;
   cursor: pointer;
-  min-width: 370px;
-  min-height: 338px;
-}
-@media only screen and (max-width: 1220px) {
-  .section_about .content_about .box_about .box_origin {
-    min-width: 350px;
-    min-height: 289px;
-  }
-}
-@media only screen and (max-width: 1024px) {
-  .section_about .content_about .box_about .box_origin {
-    min-width: 317px;
-    min-height: 283px;
-  }
-}
-@media only screen and (max-width: 320px) {
-  .section_about .content_about .box_about .box_origin {
-    min-width: 288px;
-    min-height: 258px;
-  }
-}
-.section_about .content_about .box_about .hov_box {
   top: -16px;
   right: 16px;
   position: absolute;
   background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
-  min-width: 370px;
-  min-height: 338px;
-  opacity: 0.2;
+  opacity: 0;
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
 }
-.section_about .content_about .box_about .hov_box img {
+.section_about .content_about .pic_about .hov_box img {
   display: block;
   margin: 124px auto 30px auto;
 }
-.section_about .content_about .box_about .hov_box:hover {
+.section_about .content_about .pic_about .hov_box:hover {
   opacity: 1;
 }
-@media only screen and (max-width: 1220px) {
-  .section_about .content_about .box_about .hov_box {
-    min-width: 350px;
-    min-height: 289px;
-  }
-}
-@media only screen and (max-width: 1024px) {
-  .section_about .content_about .box_about .hov_box {
-    min-width: 317px;
-    min-height: 283px;
-  }
-}
 @media only screen and (max-width: 320px) {
-  .section_about .content_about .box_about .hov_box {
-    min-width: 288px;
-    min-height: 258px;
+  .section_about .content_about .pic_about .hov_box {
+    width: 100%;
+    height: 20%;
+    opacity: 1;
+    top: 200px;
+    left: 0;
+  }
+  .section_about .content_about .pic_about .hov_box > img {
+    display: inline;
+    margin: 0;
+    font-size: 18px;
+    line-height: 21px;
   }
 }
-.section_about .content_about .pic_about img {
+.section_about .content_about .pic_about:hover {
+  background: #95E1D3;
+}
+.section_about .content_about .pic_about .img_about {
+  cursor: pointer;
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100%;
 }
-@media only screen and (max-width: 1220px) {
-  .section_about .content_about .pic_about img {
-    max-width: 350px;
-    max-height: 289px;
-  }
-}
-@media only screen and (max-width: 1024px) {
-  .section_about .content_about .pic_about img {
-    max-width: 315px;
-    max-height: 282px;
-  }
-}
-@media only screen and (max-width: 320px) {
-  .section_about .content_about .pic_about img {
-    min-width: 288px;
-    min-height: 258px;
-  }
+
+.pic3 {
+  width: 100%;
+  height: 100%;
 }
 
 /*Section about end*/
@@ -529,15 +522,10 @@ a, a:focus, a:active {
   }
 }
 .section_futures .container .box_futures .number_futures {
-  font-family: "Raleway";
   font-size: calc(48px + 16 * (100vw - 320px) / 1190);
-  line-height: 56px;
 }
 .section_futures .container .box_futures .text_futures {
-  padding-top: calc(10px + 10 * (100vw - 320px) / 1190);
-  font-family: "Open Sans";
   font-size: calc(14px + 10 * (100vw - 320px) / 1190);
-  line-height: 28px;
 }
 
 /*section futures end*/
@@ -622,20 +610,6 @@ a, a:focus, a:active {
   position: relative;
   z-index: 3;
 }
-@media only screen and (max-width: 1024px) {
-  .section_devices .container .devices_content .tablet_img .img_frame {
-    left: -80px;
-  }
-}
-@media only screen and (max-width: 320px) {
-  .section_devices .container .devices_content .tablet_img .img_frame {
-    display: none;
-  }
-}
-.section_devices .container .devices_content .tablet_img .img_frame .tablet_frame {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
 .section_devices .container .devices_content .tablet_img .img_screen {
   z-index: 2;
   position: absolute;
@@ -656,28 +630,11 @@ a, a:focus, a:active {
     left: 0;
   }
 }
-.section_devices .container .devices_content .tablet_img .img_screen .tablet_screen {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-@media only screen and (max-width: 320px) {
-  .section_devices .container .devices_content .tablet_img .img_screen .tablet_screen {
-    max-width: 274px;
-    max-height: 206px;
-    border: 5px solid black;
-    border-radius: 10px;
-  }
-}
 .section_devices .container .devices_content .phone_img {
   z-index: 4;
   position: absolute;
   top: 50%;
   left: 70%;
-}
-.section_devices .container .devices_content .phone_img > img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
 }
 @media only screen and (max-width: 1024px) {
   .section_devices .container .devices_content .phone_img {
@@ -686,11 +643,27 @@ a, a:focus, a:active {
 }
 @media only screen and (max-width: 320px) {
   .section_devices .container .devices_content .phone_img {
-    width: 85px;
-    height: 175px;
-    top: 170%;
+    top: 60%;
     left: 60%;
   }
+}
+
+.tablet_frame {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.tablet_screen {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 100%;
+}
+
+.img_phone {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
 }
 
 /*section devices end*/
@@ -770,6 +743,8 @@ a, a:focus, a:active {
   transform: rotate(180deg);
 }
 .section_what .what_content .menu_details details > summary {
+  display: flex;
+  justify-content: space-between;
   padding: 10px 0;
   border: 1px solid #C6CBCD;
   list-style: none;
@@ -781,11 +756,19 @@ a, a:focus, a:active {
   text-transform: uppercase;
   color: #2D3033;
 }
+.section_what .what_content .menu_details details > summary span {
+  display: block;
+  padding-top: 10px;
+}
 .section_what .what_content .menu_details details > summary > img {
+  display: block;
   margin: 0px 30px 0px 15px;
 }
-.section_what .what_content .menu_details details > summary .arrow {
-  align-self: flex-end;
+
+.what_img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
 }
 
 /*section what end*/
@@ -803,8 +786,16 @@ a, a:focus, a:active {
   display: flex;
 }
 .section_comment .container .arrow1 {
+  transform: rotate(90deg);
   cursor: pointer;
-  transform: rotate(-135deg);
+}
+.section_comment .container .arrow2 {
+  transform: rotate(-90deg);
+  cursor: pointer;
+}
+.section_comment .container img {
+  margin-left: 50px;
+  display: block;
 }
 @media only screen and (max-width: 320px) {
   .section_comment .container img {
@@ -832,10 +823,6 @@ a, a:focus, a:active {
 }
 .section_comment .container .comment_content .under_text .name_customer {
   font-size: calc(18px + 12 * ((100vw - 320px) / 1190));
-}
-.section_comment .container .arrow2 {
-  cursor: pointer;
-  transform: rotate(42deg);
 }
 
 /*section comment end */
@@ -932,6 +919,12 @@ a, a:focus, a:active {
   color: #2D3033;
 }
 
+.team_pic {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
 /*section team end*/
 /*section partners start*/
 .section_partners {
@@ -949,14 +942,8 @@ a, a:focus, a:active {
     grid-template-rows: repeat(4, 86px);
   }
 }
-.section_partners .container .partners_icons > img {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-@media only screen and (max-width: 320px) {
-  .section_partners .container .partners_icons > img {
-    max-width: 86px;
-  }
+.section_partners .container .part3, .section_partners .container .part4, .section_partners .container .part5 {
+  padding-top: 20px;
 }
 @media only screen and (max-width: 320px) {
   .section_partners .container .part2 {
@@ -978,6 +965,12 @@ a, a:focus, a:active {
     grid-column: 2/3;
     grid-row: 4/5;
   }
+}
+
+.img_partner {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
 }
 
 /*section partners end*/
@@ -1041,20 +1034,12 @@ a, a:focus, a:active {
     grid-row: 3/4;
   }
 }
-.section_work .work_content .work_pic img {
+
+.img_work {
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100%;
   height: 100%;
-}
-@media only screen and (max-width: 1024px) {
-  .section_work .work_content .work_pic img {
-    max-width: 255px;
-  }
-}
-@media only screen and (max-width: 320px) {
-  .section_work .work_content .work_pic img {
-    max-width: 160px;
-  }
 }
 
 /*section work end*/
@@ -1072,7 +1057,11 @@ a, a:focus, a:active {
 }
 .section_comment2 .container .arrow1 {
   cursor: pointer;
-  transform: rotate(-135deg);
+  transform: rotate(90deg);
+}
+.section_comment2 .container .arrow2 {
+  cursor: pointer;
+  transform: rotate(-90deg);
 }
 @media only screen and (max-width: 320px) {
   .section_comment2 .container .user_img {
@@ -1102,15 +1091,13 @@ a, a:focus, a:active {
 .section_comment2 .container .comment2_content .comment2_under .name_user {
   font-size: calc(18px + 12 * ((100vw - 320px) / 1190));
 }
-.section_comment2 .container .arrow2 {
-  cursor: pointer;
-  transform: rotate(42deg);
-}
 
 /*section comment2 end*/
 /*section clients start*/
 .section_clients {
   background: url(/src/img/clients/bg_clients.png);
+  background-color: rgba(255, 255, 255, 0.9);
+  background-blend-mode: overlay;
   padding: calc(29px + 13 * (100vw - 320px) / 1190) 0;
 }
 @media only screen and (max-width: 1024px) {
@@ -1140,7 +1127,7 @@ a, a:focus, a:active {
     width: 100%;
   }
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 320px) {
   .section_clients .container .clients_content {
     display: inline-block;
   }
@@ -1232,7 +1219,7 @@ a, a:focus, a:active {
   display: flex;
   justify-content: space-between;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 320px) {
   .section_stories .container .stories_content {
     display: inline-block;
   }
@@ -1240,17 +1227,11 @@ a, a:focus, a:active {
 .section_stories .container .stories_content .stories_item {
   position: relative;
 }
+.section_stories .container .stories_content .stories_item:nth-child(2) {
+  padding: 0 20px;
+}
 @media only screen and (max-width: 1024px) {
   .section_stories .container .stories_content .stories_item {
-    max-width: 316px;
-  }
-}
-.section_stories .container .stories_content .stories_item .item_pic img {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-@media only screen and (max-width: 1024px) {
-  .section_stories .container .stories_content .stories_item .item_pic img {
     max-width: 316px;
   }
 }
@@ -1303,22 +1284,30 @@ a, a:focus, a:active {
   padding-right: 16px;
 }
 
+.img_stories {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
 /*section stories end*/
 /*section location start*/
 .section_location {
-  background: url(/src/img/location/location_bg.svg);
+  background-image: url(../img/location/location_bg.svg);
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.9);
+  background-blend-mode: overlay;
   padding: 40px 0;
 }
-.section_location .location_content .location_text {
+.section_location .container .location_content .location_text {
   color: #F38281;
 }
-.section_location .location_content .line {
+.section_location .container .location_content .line {
   border: 2px solid #F38281;
 }
-.section_location .location_content .img_location {
-  transform: translate(47%, 0);
-}
-.section_location .location_content .img_location > img {
+.section_location .container .location_content .img_location > img {
+  margin: 0 auto;
+  display: block;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -1341,7 +1330,7 @@ a, a:focus, a:active {
     padding-bottom: 23px;
   }
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 320px) {
   .footer .footer_box {
     display: inline-block;
   }
@@ -1409,6 +1398,9 @@ a, a:focus, a:active {
   display: flex;
   justify-content: space-between;
 }
+.footer .footer_box .first_block .menu_social .social_list li {
+  cursor: pointer;
+}
 @media only screen and (max-width: 1024px) {
   .footer .footer_box .first_block .menu_social .social_list {
     padding-left: 20px;
@@ -1420,6 +1412,7 @@ a, a:focus, a:active {
   display: flex;
 }
 .footer .footer_box .first_block .emailButton > input {
+  outline: none;
   padding: 18px 0;
   border: 1px solid #C6CBCD;
   display: inline-block;
@@ -1470,36 +1463,33 @@ a, a:focus, a:active {
     max-width: 402px;
   }
 }
-.footer .footer_box .second_block .blog_box {
+.footer .footer_box .second_block .blogs_content {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  row-gap: 20px;
+}
+.footer .footer_box .second_block .blogs_content .blog_box {
+  cursor: pointer;
   display: flex;
 }
-.footer .footer_box .second_block .blog_box:nth-child(2) {
-  padding: 20px 0;
-}
-.footer .footer_box .second_block .blog_box .pic_blog > img {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.footer .footer_box .second_block .blog_box .content_blog {
+.footer .footer_box .second_block .blogs_content .content_blog {
   padding-left: 30px;
 }
-.footer .footer_box .second_block .blog_box .content_blog .name_blog {
+.footer .footer_box .second_block .blogs_content .content_blog .name_blog {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: calc(14px + 4 * (100vw - 320px) / 1190);
   line-height: 21px;
-  display: flex;
-  align-items: center;
   text-transform: uppercase;
   color: #2D3033;
 }
-.footer .footer_box .second_block .blog_box .content_blog .data_blog {
+.footer .footer_box .second_block .blogs_content .content_blog .data_blog {
   padding: 10px 0;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
-  font-size: 13px;
+  font-size: calc(13px + 1 * (100vw - 320px) / 1190);
   line-height: 15px;
   display: flex;
   align-items: center;
@@ -1518,8 +1508,6 @@ a, a:focus, a:active {
   font-weight: 400;
   font-size: 13px;
   line-height: 15px;
-  display: flex;
-  align-items: center;
   text-decoration-line: underline;
   text-transform: uppercase;
   color: #2D3033;
@@ -1534,6 +1522,12 @@ a, a:focus, a:active {
   text-align: center;
   text-transform: uppercase;
   color: #2D3033;
+}
+
+.img_blog {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
 }
 
 /*footer end*//*# sourceMappingURL=style.css.map */
