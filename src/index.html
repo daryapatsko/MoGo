@@ -12,9 +12,16 @@
     <div class="wrapper">
         <header class="header">
             <div class="container">
-                <nav class="navigation">
-                    <img src="/src/img/logo.png" alt="logo">
-                    <div class="menu_header">
+                <div class="header_body">
+                    <a href="#" class="header_logo">
+                        <img src="/src/img/logo.png" alt="logo" class="header_img">
+                    </a>
+                    <div class="header_burger" id="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <nav class="header_menu">
                         <ul class="header_list">
                             <li class="header_item">About</li>
                             <li class="header_item">service</li>
@@ -24,14 +31,9 @@
                             <li class="header_item"><img class="nav_img" src="/src/img/icon_shop.svg" alt="shop"></li>
                             <li class="header_item"><img class="nav_img" src="/src/img/icon_search.svg" alt="search"></li>
                         </ul>
-                    </div>
-                    <div class="header_burger" id="burger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </nav>
-                
+
+                    </nav>
+                </div>
             </div>
         </header>
         <section class="section_welcome">
@@ -67,9 +69,9 @@
                 <div class="red_line"></div>
                 <div class="text_about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu facilisis sed venenatis lacus. Eget sit ridiculus facilisi amet. Dis sapien ipsum enim dui fermentum viverra dolor sit. Aliquet congue sit fermentum risus feugiat.</div>
                 <div class="content_about">
-                    <div class="pic_about"><div class="hov_box"><img src="/src/img/pic_about/icon.png"  alt="icon">Super Team</div><img src="/src/img/pic_about/img3.png" class="img_about pic3" alt="pic3" width="370px" height="338px"></div>
-                    <div class="pic_about"><div class="hov_box"><img src="/src/img/pic_about/icon.png"  alt="icon">Super Team</div><img src="/src/img/pic_about/img1.png" class="img_about" alt="pic1"></div>
-                    <div class="pic_about"><div class="hov_box"><img src="/src/img/pic_about/icon.png"  alt="icon">Super Team</div><img src="/src/img/pic_about/img2.png" class="img_about" alt="pic2"></div>
+                    <div class="pic_about pic1"><div class="hov_box"><img src="/src/img/pic_about/icon.png"  alt="icon">Super Team</div><img src="/src/img/pic_about/pic1.jpg" class="img_about" alt="pic3"></div>
+                    <div class="pic_about pic2"><div class="hov_box"><img src="/src/img/pic_about/icon.png"  alt="icon">Super Team</div><img src="/src/img/pic_about/pic2.jpg" class="img_about" alt="pic1"></div>
+                    <div class="pic_about pic3"><div class="hov_box"><img src="/src/img/pic_about/icon.png"  alt="icon">Super Team</div><img src="/src/img/pic_about/pic3.jpg" class="img_about" alt="pic2"></div>
                 </div>
             </div>
 
@@ -226,45 +228,51 @@
                 <div class="team_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu facilisis sed venenatis lacus. Eget sit ridiculus facilisi amet. Dis sapien ipsum enim dui fermentum viverra dolor sit. Aliquet congue sit fermentum risus feugiat.</div>
                 <div class="team_content">
                     <div class="team_item">
-                        <div class="img_hov">
+                        <div class="team_img">
+                            <div class="img_hov">
                             <div class="menu_icons">
                                 <img src="/src/img/team/fb_icon.svg" alt="facebook">
                                 <img src="/src/img/team/twitter_icon.svg" alt="twitter">
                                 <img src="/src/img/team/pinterest_icon.svg" alt="pinterest">
                                 <img src="/src/img/team/inst_icon.svg" alt="instagram">
                             </div>
+                            </div>
+                            <img src="/src/img/team/founder.svg" class="team_pic" alt="founder">
                         </div>
-                        <div class="team_img"><img src="/src/img/team/founder.svg" class="team_pic" alt="founder"></div>
                         <div class="team_name">Kadin Dias</div>
                         <div class="team_prof">founder, ceo</div>
 
                     </div>
 
                     <div class="team_item">
-                        <div class="img_hov">
-                            <div class="menu_icons">
-                                <img src="/src/img/team/fb_icon.svg" alt="facebook">
-                                <img src="/src/img/team/twitter_icon.svg" alt="twitter">
-                                <img src="/src/img/team/pinterest_icon.svg" alt="pinterest">
-                                <img src="/src/img/team/inst_icon.svg" alt="instagram">
+                        <div class="team_img">
+                            <div class="img_hov">
+                                <div class="menu_icons">
+                                    <img src="/src/img/team/fb_icon.svg" alt="facebook">
+                                    <img src="/src/img/team/twitter_icon.svg" alt="twitter">
+                                    <img src="/src/img/team/pinterest_icon.svg" alt="pinterest">
+                                    <img src="/src/img/team/inst_icon.svg" alt="instagram">
+                                </div>
                             </div>
+                            <img src="/src/img/team/designer.svg" class="team_pic" alt="designer">
                         </div>
-                        <div class="team_img"><img src="/src/img/team/designer.svg" class="team_pic" alt="designer"></div>
                         <div class="team_name">Zain Calzoni</div>
                         <div class="team_prof">designer</div>
 
                     </div>
 
                     <div class="team_item">
-                        <div class="img_hov">
-                            <div class="menu_icons">
-                                <img src="/src/img/team/fb_icon.svg" alt="facebook">
-                                <img src="/src/img/team/twitter_icon.svg" alt="twitter">
-                                <img src="/src/img/team/pinterest_icon.svg" alt="pinterest">
-                                <img src="/src/img/team/inst_icon.svg" alt="instagram">
+                        <div class="team_img">
+                            <div class="img_hov">
+                                <div class="menu_icons">
+                                    <img src="/src/img/team/fb_icon.svg" alt="facebook">
+                                    <img src="/src/img/team/twitter_icon.svg" alt="twitter">
+                                    <img src="/src/img/team/pinterest_icon.svg" alt="pinterest">
+                                    <img src="/src/img/team/inst_icon.svg" alt="instagram">
+                                </div>
                             </div>
+                            <img src="/src/img/team/photographer.svg" class="team_pic" alt="photographer">
                         </div>
-                        <div class="team_img"><img src="/src/img/team/photographer.svg" class="team_pic" alt="photographer"></div>
                         <div class="team_name">Charlie George</div>
                         <div class="team_prof">photographer</div>
                     </div>
@@ -278,7 +286,7 @@
                 <div class="partners_icons part2"><img src="/src/img/partners/partners2.svg" class="img_partner" alt="part2" ></div>
                 <div class="partners_icons part3"><img src="/src/img/partners/partners3.svg" class="img_partner" alt="part3" ></div>
                 <div class="partners_icons part4"><img src="/src/img/partners/partners4.svg" class="img_partner" alt="part4" ></div>
-                <div class="partners_icons part5"><img src="/src/img/partners/partners5.svg" class="img_partner" alt="part5" ></div>
+                <div class="partners_icons part5"><img src="/src/img/partners/partners5.svg" class="img_partner partners5" alt="part5" ></div>
                 <div class="partners_icons part6"><img src="/src/img/partners/partners6.svg" class="img_partner" alt="part6" ></div>
             </div>
         </section>
@@ -493,8 +501,7 @@
                     <div class="third_block">
                         <div class="thirdBlog_title">instagram</div>
                         <div class="content_instagram">
-                            <div class="pic_inst"><img src="/src/img/Footer/inst/inst1.svg" alt="inst1">
-                            </div>
+                            <div class="pic_inst"><img src="/src/img/Footer/inst/inst1.svg" alt="inst1"></div>
                             <div class="pic_inst"><img src="/src/img/Footer/inst/inst2.svg" alt="inst2"></div>
                             <div class="pic_inst"><img src="/src/img/Footer/inst/inst3.svg" alt="inst3"></div>
                             <div class="pic_inst"><img src="/src/img/Footer/inst/inst4.svg" alt="inst4"></div>
